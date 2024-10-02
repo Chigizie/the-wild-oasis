@@ -9,9 +9,9 @@ function DarkModeToggle() {
   useEffect(() => {
     localStorage.setItem("dark", "dark-mode");
     if (isDarkMode) {
-      document.documentElement.classList.remove(localStorage.getItem("dark"));
-    } else {
       document.documentElement.classList.add(localStorage.getItem("dark"));
+    } else {
+      document.documentElement.classList.remove(localStorage.getItem("dark"));
     }
   }, [isDarkMode]);
 
