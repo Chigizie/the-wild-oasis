@@ -10,6 +10,7 @@ const StyledHeader = styled.ul`
   display: flex;
   gap: 0.4rem;
 `;
+document.title = "The-wild-oasis";
 
 function HeaderMenu() {
   const navigate = useNavigate();
